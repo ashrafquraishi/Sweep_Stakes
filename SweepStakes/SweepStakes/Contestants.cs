@@ -6,9 +6,27 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    class Contestants
+   public class Contestants
     {
-        //first name, last name, email address, and registration number.
+       string firstname;
+       string lastname;
+       string emailaddress;
+       public int registrationnumber;
         
+    
+         public void ContestantInfo()
+        {
+            Console.WriteLine("What is your first name?");
+            this.firstname = Console.ReadLine();
+            Console.WriteLine("What is your Last name?");
+            this.lastname = Console.ReadLine();
+            Console.WriteLine("What is your E-mail Address?");
+            this.emailaddress = Console.ReadLine();
+            //.registrationnumber = registrationnumber;
+        }
+        
+
+
+
     }
 }
