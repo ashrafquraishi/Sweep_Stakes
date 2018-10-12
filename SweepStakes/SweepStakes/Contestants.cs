@@ -15,7 +15,7 @@ namespace SweepStakes
         
     
          public void ContestantInfo()
-        {
+         {
             Console.WriteLine("What is your first name?");
             this.firstname = Console.ReadLine();
             Console.WriteLine("What is your Last name?");
@@ -23,7 +23,8 @@ namespace SweepStakes
             Console.WriteLine("What is your E-mail Address?");
             this.emailaddress = Console.ReadLine();
             //.registrationnumber = registrationnumber;
-        }
+         }
+
         
 
 
