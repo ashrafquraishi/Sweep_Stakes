@@ -11,6 +11,7 @@ namespace SweepStakes
         Dictionary<int, Contestants> ContestantsList = new Dictionary<int, Contestants>();
         public string name;
         int counter = 1;
+        int WinningNumber;
          public	SweepStakes(string name)
          {
             this.name = name;
@@ -23,13 +24,18 @@ namespace SweepStakes
             counter++;
          }
 
-        void  PickWinner()
+        void  PickWinningNumber()
         {
-
+            Random random = new Random();
+            WinningNumber = random.Next(1, counter);
+            Console.WriteLine("The Winning Number Is", WinningNumber);
 
 
         }
-       //-	void PrintContestantInfo(Contestant contestant)
+      	void PrintContestantInfo(Contestants contestant)
+        {
+
+        }
 
     }
 }
